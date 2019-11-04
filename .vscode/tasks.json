@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SDLFractal",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-o",
+                "Frac",
+                "Frac.cpp",
+                "Screen.cpp",
+                "Fractal.cpp",
+                "Bitmap.cpp",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
+                "-IE:\\Pulpit\\SDL2-2.0.10\\x86_64-w64-mingw32\\include",
+                "-LE:\\Pulpit\\SDL2-2.0.10\\x86_64-w64-mingw32\\lib",
+                "-IE:\\Dropbox\\FractalSDL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
